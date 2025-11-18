@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+    <h1 class="h1">Predictive Analytics for Student Performance</h1>
+    <span class="badge">Professional Package</span>
+  </div>
+
+    <div class="wrapper">
+        <div class="block">
+            <div class="signinPage">
+                <div class="signIn">
+                    <h1>Sign in</h1>
+                </div>
+                  <div class="details">
+                        <div class="phara">
+                            <p>use your account</p>
+                        </div>
+                        <div class="formWrapper">
+                            <form>
+                                <label for="mail"></label>
+                                <input type="email" class="mail" id="username" value="Email"><br>
+                                 <label for="pass"></label>
+                                <input type="text" class="pass" id="password" value="Password">
+                            </form>
+                        </div>
+                 </div>
+                 <div class="forgotButton">
+                    <a href="#">Forgot your password?</a>
+                 </div>
+                 <div class="signInbtn">
+                    <!-- <a href="../upload/file.html" >SIGN IN</a> -->
+                     <button type="button" onclick="clickHandler()" id="enter">SIGN IN</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+function clickHandler() {
+  if (document.getElementById("username").value === "Karan" && document.getElementById("password").value === '12345'){
+    console.log("redirect to chat.html");
+    window.location.replace("../upload/file.html");
+  } else {
+    alert('Wrong Password');
+  }
+}
+    </script>
+</body>
+</html>

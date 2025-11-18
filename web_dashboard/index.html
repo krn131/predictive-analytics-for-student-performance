@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Predictive Analytics for Student Performance – Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="container">
+  <div class="header">
+    <h1 class="h1">Predictive Analytics for Student Performance</h1>
+    <span class="badge">Professional Package</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="h2">Best Model</div>
+      <div class="kpi">LogisticRegression</div>
+    </div>
+    <div class="card">
+      <div class="h2">Accuracy</div>
+      <div class="kpi">0.766</div>
+    </div>
+    <div class="card">
+      <div class="h2">Macro F1</div>
+      <div class="kpi">0.772</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="h2">Confusion Matrix</div>
+      <img src="../results/confusion_matrix.png" alt="Confusion Matrix">
+    </div>
+    <div class="card">
+      <div class="h2">Feature Importance / Model Comparison</div>
+      <img src="../results/model_comparison.png" alt="Feature Importance">
+    </div>
+    <div class="card">
+      <div class="h2">Class Distribution (Predictions)</div>
+      <table class="table">
+        <thead><tr><th>Class</th><th>Count</th></tr></thead>
+        <tbody>
+          <tr><td>Average</td><td>138</td></tr><tr><td>At-Risk</td><td>92</td></tr><tr><td>High</td><td>90</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="h2">Top 10 At-Risk Students (by probability)</div>
+    <table class="table">
+      <thead>
+        <tr><th>StudentID</th><th>Attendance</th><th>Internal1</th><th>Internal2</th><th>AssignmentScore</th><th>Participation</th><th>Prob_AtRisk</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>S1319</td><td>81</td><td>58</td><td>54</td><td>59</td><td>1</td><td>0.999</td></tr><tr><td>S1045</td><td>82</td><td>55</td><td>75</td><td>31</td><td>1</td><td>0.999</td></tr><tr><td>S1244</td><td>74</td><td>86</td><td>55</td><td>46</td><td>2</td><td>0.998</td></tr><tr><td>S1189</td><td>78</td><td>64</td><td>54</td><td>69</td><td>1</td><td>0.997</td></tr><tr><td>S1314</td><td>77</td><td>70</td><td>69</td><td>60</td><td>1</td><td>0.994</td></tr><tr><td>S1112</td><td>75</td><td>58</td><td>40</td><td>76</td><td>6</td><td>0.992</td></tr><tr><td>S1135</td><td>62</td><td>57</td><td>32</td><td>39</td><td>8</td><td>0.988</td></tr><tr><td>S1080</td><td>90</td><td>67</td><td>69</td><td>14</td><td>0</td><td>0.984</td></tr><tr><td>S1181</td><td>71</td><td>58</td><td>24</td><td>47</td><td>4</td><td>0.982</td></tr><tr><td>S1273</td><td>62</td><td>63</td><td>71</td><td>70</td><td>1</td><td>0.980</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="home">
+    <a href="./login page /index2.html"><img src="https://static.vecteezy.com/system/resources/previews/021/797/174/non_2x/arrow-left-icon-isolated-on-white-background-vector.jpg" alt="ff"></a>
+  </div>
+
+  <footer>This page was last edited on 17 November 2025</footer>
+</div>
+</body>
+</html>
